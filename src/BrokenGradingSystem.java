@@ -42,6 +42,6 @@ public class BrokenGradingSystem implements GradingSystem {
 		// Divide the total by the number of grades
 		int average = total / grades.get(studentId).size();
 		
-		return total;
+		return average;
 	}
 }
