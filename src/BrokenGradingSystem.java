@@ -21,11 +21,11 @@ public class BrokenGradingSystem implements GradingSystem {
 		
 		// Add the grade to the record.
 		grades.get(studentId).add(grade);
-	};
+	}
 	
 	public List<Integer> getGrades(String studentId) {
 		return grades.get(studentId);
-	};
+	}
 	
 	public int getAverage(String studentId) {
 		// Check for non-existing
@@ -43,5 +43,5 @@ public class BrokenGradingSystem implements GradingSystem {
 		int average = total / grades.get(studentId).size();
 		
 		return total;
-	};
+	}
 }
