@@ -33,10 +33,14 @@ public class BrokenGradingSystem implements GradingSystem {
 			return -1;
 		}
 		
+		// Sum up the total number of grades
 		int total = 0;
 		for (int grade : grades.get(studentId)) {
 			total += grade;
 		}
+		
+		// Divide the total by the number of grades
+		int average = total / grades.size();
 		
 		return total;
 	};
